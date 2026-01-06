@@ -1,6 +1,6 @@
 package constant
 
 const (
-	Version = "v0.3"
+	Version = "v0.4"
 	AppName = "sangfor-ad-exporter"
 )
