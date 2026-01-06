@@ -1,0 +1,6 @@
+# 深信服AD 相关配置
+sangfor_ad:
+  device_name: "INFRA-AD"
+  username: "infra"
+  password: "infra"
+  url: "https://192.168.1.1"
