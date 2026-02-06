@@ -1,5 +1,7 @@
 # Sangfor AD Exporter
 
+[English](README_EN.md) | 中文文档
+
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Go Report Card](https://goreportcard.com/badge/github.com/shaxiaozz/sangfor-ad-exporter)](https://goreportcard.com/report/github.com/shaxiaozz/sangfor-ad-exporter)
 
