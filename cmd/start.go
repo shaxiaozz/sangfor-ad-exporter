@@ -63,13 +63,13 @@ func start() {
 	mux.Handle("/metrics", promhttp.Handler())
 
 	srv := &http.Server{
-		Addr:    ":8080",
+		Addr:    ":9098",
 		Handler: mux,
 	}
 
 	// 启动 HTTP
 	go func() {
-		global.Logger.Info("sangfor-ad-exporter 启动成功，监听 :8080")
+		global.Logger.Info("sangfor-ad-exporter 启动成功，监听 :9098")
 		if err := srv.ListenAndServe(); err != nil && err != http.ErrServerClosed {
 			global.Logger.Fatal(fmt.Sprintf("HTTP server 启动失败: %v", err))
 		}

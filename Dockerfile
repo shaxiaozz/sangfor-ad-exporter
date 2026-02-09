@@ -14,5 +14,5 @@ COPY --from=builder /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
 COPY --from=builder /data/sangfor-ad-exporter-code/sangfor-ad-exporter /sangfor-ad-exporter
 RUN mkdir /etc/sangfor-ad-exporter
-EXPOSE 8080
+EXPOSE 9098
 CMD ["/sangfor-ad-exporter","start"]
