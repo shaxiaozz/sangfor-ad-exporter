@@ -37,7 +37,7 @@
    ```bash
    docker run -d \
      --name sangfor-ad-exporter \
-     -p 8080:8080 \
+     -p 9098:9098 \
      -v $(pwd)/config.yaml:/sangfor-ad-exporter/config.yaml \
      --restart=always \
      shaxiaozz/sangfor-ad-exporter:latest
@@ -105,7 +105,7 @@ Exporter 会在 `/metrics` 路径下暴露以下指标。所有指标均包含 `
 scrape_configs:
   - job_name: 'sangfor_ad'
     static_configs:
-      - targets: ['localhost:8080']
+      - targets: ['localhost:9098']
     metrics_path: /metrics
     scrape_interval: 15s
 ```
